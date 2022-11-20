@@ -1,0 +1,26 @@
+﻿Estimate summary,,,,,,,,
+Upfront cost,Monthly cost,Total 12 months cost,Currency,,,,,
+0,18407.25,220887,USD,,,,,
+,,* Includes upfront cost,,,,,,
+,,,,,,,,
+,,,,,,,,
+Detailed Estimate,,,,,,,,
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,257.85,3094.2,USD,Number of NAT Gateways (1)
+My Estimate,US East (N. Virginia),,S3 Standard,0,114.98,1379.76,USD,S3 Standard storage (4999 GB per month)
+My Estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD,
+My Estimate,US East (N. Virginia),,Amazon CloudFront,0,526.48,6317.76,USD,"Data transfer out to internet (5000 GB per month), Data transfer out to origin (4999 GB per month), Number of requests (HTTPS) (1500000 per month)"
+My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,14825.84,177910.08,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (10000 GB), Quantity (2), Instance type (db.m4.10xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Total Size of Backup Processed for Export (GB) ( per month)"
+My Estimate,US East (N. Virginia),,Amazon EC2,0,2065.25,24783,USD,"Operating system (Linux), Quantity (32), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (30 GB), Instance type (t4g.xlarge)"
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,616.85,7402.2,USD,Number of Application Load Balancers (2)
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Notes:,,,,,,,,
+"With increased budget, I have introduced following redudency to improve performance",,,,,,,,
+"Storage amount increased to 10000 GB, an replaced Quantity (2) of Amazon RDS for MySQL Instance type (db.m4.4xlarge) with instance type (db.m4.10xlarge)",,,,,,,,
+Number of EC2 instances to run webservers and application servers increased from 16 to 32,,,,,,,,

@@ -1,0 +1,25 @@
+﻿Estimate summary,,,,,,,,
+Upfront cost,Monthly cost,Total 12 months cost,Currency,,,,,
+0,6224.31,74691.72,USD,,,,,
+,,* Includes upfront cost,,,,,,
+,,,,,,,,
+,,,,,,,,
+Detailed Estimate,,,,,,,,
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,257.85,3094.2,USD,Number of NAT Gateways (1)
+My Estimate,US East (N. Virginia),,S3 Standard,0,114.98,1379.76,USD,S3 Standard storage (4999 GB per month)
+My Estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD,
+My Estimate,US East (N. Virginia),,Amazon CloudFront,0,526.48,6317.76,USD,"Data transfer out to internet (5000 GB per month), Data transfer out to origin (4999 GB per month), Number of requests (HTTPS) (1500000 per month)"
+My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,4320.92,51851.04,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (500 GB), Quantity (2), Instance type (db.m4.4xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand)"
+My Estimate,US East (N. Virginia),,Amazon EC2,0,387.23,4646.76,USD,"Operating system (Linux), Quantity (6), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (30 GB), Instance type (t4g.xlarge)"
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,616.85,7402.2,USD,Number of Application Load Balancers (2)
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
+,,,,,,,,
+Notes:,,,,,,,,
+"Inorder to reduce the cost to under 6500, I have done the following changes",,,,,,,,
+"Storage amount reduced to 500 GB, for Quantity (2), of Amazon RDS for MySQLInstance type (db.m4.4xlarge)",,,,,,,,
+Number of EC2 instances to run webservers and application servers reduced from 16 to 6,,,,,,,,
